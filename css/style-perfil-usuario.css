@@ -1,0 +1,82 @@
+/* The side navigation menu */
+        .sidenav {
+            height: 100%; /* 100% Full-height */
+            max-height: 100%;
+            width: 0; /* 0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 99999; /* Stay on top */
+            top: 0; /* Stay at the top */
+            right: 0%;
+            background-color: #111; /* Black*/
+            overflow-x: hidden; /* Disable horizontal scroll */
+            padding-top: 60px; /* Place content 60px from the top */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+        }
+
+        /* The navigation menu links */
+        .sidenav a.links-perfil-user {
+            padding: 8px 8px 8px 0;
+            margin-left: 15%;
+            text-decoration: none;
+            font-size: 18px;
+            color: #262826;
+            display: block;
+            transition: 0.3s;
+            font-family: lato, arial, sans-serif;
+            line-height: 2;
+        }
+
+        /* When you mouse over the navigation links, change their color */
+        .sidenav a:hover {
+            color: dimgray;
+        }
+
+        /* Position and style the close button (top right corner) */
+        .sidenav .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 15%;
+            font-size: 36px;
+            margin-left: 50px;
+            text-decoration: none;
+            color: #262826;
+        }
+
+        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 18px;}
+        }
+        
+        
+        p.nome-usuario{
+            font-size: 24px;
+            font-family: lato, arial, sans-serif;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 7px;
+            color: #262826;
+        }
+        a.editar-perfil{
+            font-size: 16px;
+            font-family: lato, arial, sans-serif;
+            text-align: center;
+            color: #262826;
+            text-decoration: none;
+            padding: 0;
+            display: block;
+            transition: 0.3s;
+            margin-bottom: 10px;
+        }
+        a.editar-perfil:hover{
+            cursor: pointer;
+        }
+        hr { 
+            display: block;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left: 10%;
+            margin-right: 10%;
+            height: 1px;
+            color: #262826;
+        }

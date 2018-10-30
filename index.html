@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AlterCook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style-perfil-usuario.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Poiret+One|Quicksand" rel="stylesheet">
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js">
+    </script>
+        <script language="javascript">
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "25%";
+            document.getElementById("mySidenav").style.color = "#262826";
+        }
+
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("mySidenav").style.color = "white";
+        }
+    </script>
+    </head>
+    
+    <body>
+        <div class="page">
+            <!-- #### MENU #### -->
+            <header class="menu">
+            <img class="img-logo-menu menu-itens" src="img/AC.png" alt="AlterCook">
+            
+            <div class="search-container menu-itens">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Pesquisar..." name="pesquisar" class="search-form">
+                        
+                    <button type="submit"><img src="img/icons/search.svg" class="img-search" alt="Pesquisar"/></button>
+                </form>
+            </div>
+            
+            <div class="menu-icon-container menu-itens">
+                    <a href="">
+                        <img src="img/icons/contract.svg" class="menu-icon">
+                    </a>
+                    <span onclick="openNav()" style="margin-left: 150px; margin-right: 5px; cursor: pointer;">
+                        <img src="img/icons/menu.svg" class="drop-menu-icon">
+                    </span>
+            </div>
+            
+            <nav class="navbar-top">
+                <a href="">Vegana</a>
+                <a href="">Vegetariana</a>
+                <a href="">Alergias</a>
+                <a href="">Intolerâncias</a>
+                <a href="">Zero Açúcar</a>
+            </nav>
+        </header>
+            
+            <!-- #### SLIDER #### -->
+            <div class="slider-wrapper">
+            <div class="slider">
+                <div class="slider--item" style="background-image: url(img/slider-img-6.jpg)">
+                </div>
+                
+                <div class="slider--item" style="background-image: url(img/slider-img-2.jpg)">
+                </div>
+                
+                <div class="slider--item" style="background-image: url(img/slider-img-3.jpg)">
+                </div>
+                
+                <div class="slider--item" style="background-image: url(img/slider-img-4.jpg)">
+                </div>
+                
+                <div class="slider--item" style="background-image: url(img/slider-img-7.jpeg)">
+                </div>
+              </div>
+            </div>
+            
+            
+            <!-- #### CARDS #### -->
+            <h1 class="titulo-rec" style="margin-top: 80px; margin-left: 35px; font-size: 25px;">Recomendadas</h1>
+        
+            <section class="section-cards3">
+                <div class="card">
+                    <div class="imagem-card">
+                        <img class="thumb" src="img/imagem-1.jpg">
+                    </div>
+
+                    <div class="texto-card">
+                        <h4 class="titulo-card">Vulcano</h4>
+                        <p class="autor-card">Por: Ana Branco</p>
+                    <br>
+                            <img class="icon-card" src="img/icons/clock.svg">
+                            <img class="icon-card" src="img/icons/star.svg">
+                    <br>
+                        <p class="first-detail-card">30min</p>
+                        <p class="last-detail-card">5</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagem-card">
+                        <img class="thumb" src="img/imagem-2.jpg">
+                    </div>
+
+                    <div class="texto-card">
+                        <h4 class="titulo-card">Hambúrger Vegetariano</h4>
+                        <p class="autor-card">Por: Mariana Souza</p>
+                    <br>
+                            <img class="icon-card" src="img/icons/clock.svg">
+                            <img class="icon-card" src="img/icons/star.svg">
+                    <br>
+                        <p class="first-detail-card">40min</p>
+                        <p class="last-detail-card">5</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="imagem-card">
+                        <img class="thumb" src="img/imagem-3.jpg">
+                    </div>
+
+                    <div class="texto-card">
+                        <h4 class="titulo-card">Brigadeiro Sem Lactose</h4>
+                        <p class="autor-card">Por: Marcos Britto</p>
+                    <br>
+                            <img class="icon-card" src="img/icons/clock.svg">
+                            <img class="icon-card" src="img/icons/star.svg">
+                    <br>
+                        <p class="first-detail-card">20min</p>
+                        <p class="last-detail-card">5</p>
+                    </div>
+                </div>
+            </section>
+        
+            <a href="javascript:;" style="display: block; float: right; text-decoration: none; margin-right: 170px; margin-top: 10px; margin-bottom: 5px; color: #444; font-size: 20px; font-size: 16px;">Ver mais...</a>
+        
+            <h1 style="margin-top: 100px; margin-left: 35px;  font-size: 25px;">Recentes</h1>
+            
+       <!-- <div class="titulo-nov">
+            <h1 class="titulo-nov">Recentes</h1>
+        </div> -->
+        
+        <section class="section-cards3">
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/coxinha-jaca.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Coxinha com Carne de Jaca</h4>
+                    <p class="autor-card">Por: Camila Monique</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">60min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/carne-de-soja.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Carne de Soja</h4>
+                    <p class="autor-card">Por: Murilo Magalhães</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">25min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/tomate-recheado.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Tomate Recheado</h4>
+                    <p class="autor-card">Por: Juliana Sant'anna</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">35min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-cards3">
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/croquete-vegano.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Croquete Vegano</h4>
+                    <p class="autor-card">Por: Bárbara Glaessel</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">35min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/massa-lasanha.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Massa de Lasanha sem Ovo</h4>
+                    <p class="autor-card">Por: Rafael Moreira</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">20min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/quiabo-torrado.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Quiabo Torrado</h4>
+                    <p class="autor-card">Por: André dos Santos</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">20min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section-cards3">
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/torta.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Torta de Alho Poró com Cebola Caramelizada</h4>
+                    <p class="autor-card">Por: Eduarda Soares</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">60min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/risoto.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Risoto de Tomate</h4>
+                    <p class="autor-card">Por: Marcos França</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">40min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="imagem-card">
+                    <img class="thumb" src="img/bolinho.png">
+                </div>
+                
+                <div class="texto-card">
+                    <h4 class="titulo-card">Bolinho Vegetariano</h4>
+                    <p class="autor-card">Por: Ricardo Gomes</p>
+                <br>
+                        <img class="icon-card" src="img/icons/clock.svg">
+                        <img class="icon-card" src="img/icons/star.svg">
+                <br>
+                    <p class="first-detail-card">40min</p>
+                    <p class="last-detail-card">5</p>
+                </div>
+            </div>
+        </section>
+            
+        <a href="javascript:;" style="display: block; float: right; text-decoration: none; margin-right: 170px; margin-top: 10px; margin-bottom: 80px; color: #444; font-size: 20px; font-size: 16px;">Ver mais...</a>
+            
+            
+        </div>
+    <!-- <script src='js/jquery.min.js'></script> -->
+        <script src='js/slick.min.js'></script>
+        <script src='js/tweenmax.min.js'></script>
+        <script  src="js/index.js"></script>
+
+    </body>
+    
+        <footer style="background-color: #2b402b; font-size: 12px;" class="flex-rw">
+          <section class="footer-social-section flex-rw">
+              <span class="footer-social-overlap footer-social-connect">
+              AlterCook
+              </span>
+          </section>
+          <ul class="footer-list-top" style="padding-bottom: 30px; padding-top: 10px;">
+            <li>
+              <h4 class="footer-list-header">Sobre Nós</h4></li>
+            <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">TERMOS DE USO</a></li> 
+              <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">POLÍTICA DE PRIVACIDADE</a></li>
+              <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">COMO NOS ENCONTRAR?</a></li>
+            <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">ANUNCIE CONOSCO</a></li>
+            <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTATO</a></li>
+
+
+          </ul>
+          <ul class="footer-list-top">
+            <li>
+              <h4 class="footer-list-header">Receitas</h4></li>
+
+
+            <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">VEGANAS</a></li>
+            <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">VEGETARIANAS</a></li>
+            <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">ALERGIAS</a></li>
+            <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">INTOLERÂNCIAS</a></li>
+            <li><a href='/Ladies-Accessories/cat/id/117' class="generic-anchor footer-list-anchor" target="_blank">ZERO AÇÚCAR</a></li>
+          </ul>
+          <ul class="footer-list-top">
+            <li id='help'>
+                <h4 class="footer-list-header">Redes Sociais</h4>
+            </li>
+              <div class="conjunto-icons">
+            <li class="li"><a href="https://www.facebook.com/Cook.Alter/" class="social-icon" target="_blank"><img src="img/icons/facebook-logo-button.svg" style="border-radius: 50%; width: 25px;">
+            </a></li>
+            <li class="li"><a href="https://twitter.com/_AlterCook" class="social-icon" target="_blank"><img src="img/icons/twitter-logo-button.svg" style="border-radius: 50%; width: 25px;">
+            </a></li>
+            <li class="li"><a href="https://www.instagram.com/alter_cook/?hl=pt-br" class="social-icon" target="_blank"><img src="img/icons/instagram-logo.svg" style="border-radius: 50%; width: 25px;">
+            </a></li>
+              <li class="li"><a href="https://br.pinterest.com/altercook/" class="social-icon" target="_blank"><img src="img/icons/pinterest.svg" style="border-radius: 50%; width: 25px;">
+            </a></li>
+              <li class="li"><a href="https://plus.google.com/u/1/" class="social-icon" target="_blank"><img src="img/icons//google-plus-logo-button.svg" style="border-radius: 50%; width: 25px;">
+            </a></li>
+              <li class="li"><a href="https://www.youtube.com/channel/UC18rw8acvoY9gS9-L_r17uA?view_as=subscriber" class="social-icon" target="_blank"><img src="img/icons/youtube-logotype.svg" style="border-radius: 50%; width: 25px;">
+            </a></li>
+                </div>
+            </ul>
+          <section class="footer-bottom-section">
+        <div class="footer-bottom-wrapper">
+            <p class="direitos"> Todos os direitos reservados &#64; AlterCook - 2018</p>
+            </div>
+          </section>
+        </footer>
+    
+        <div id="mySidenav" class="sidenav"  style="max-width: 40%; background-color: white;">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="imgcontainer">
+                <img src="img/icons/woman.svg" alt="Avatar" class="avatar" style="width: 35%; border-radius: 50%; margin-left: 32.5%; margin-right: 32.5%; margin-bottom: 10px;">
+            </div>
+
+            <div class="container_log">
+                <p class="nome-usuario">Nome da Pessoa</p>
+                <a class="editar-perfil">Editar Perfil</a><br>
+
+                <div class="align"><a href="javascript:;" class="links-perfil-user"><img src="img/icons/list.svg" style="width: 25px; margin-right: 10px;">Minhas Receitas</a></div>
+                <hr size="1">
+                <a href="javascript:;" class="links-perfil-user"><img src="img/icons/star-p.svg" style="width: 25px; margin-right: 10px;">Favoritos</a>
+                <hr size="1">
+                <a href="javascript:;" class="links-perfil-user"><img src="img/icons/funnel.svg" style="width: 25px; margin-right: 10px;">Filtros</a>
+                <hr size="1">
+                <a href="javascript:;" class="links-perfil-user"><img src="img/icons/logout.svg" style="width: 20px; margin-right: 10px;">Sair</a>
+            </div>
+        </div>
+</html>
