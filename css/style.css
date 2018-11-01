@@ -50,11 +50,9 @@ ul.ul {
     padding: 0;
     overflow: hidden;
 }
-
 li.li {
     float: left;
 }
-
 li.li a {
     display: block;
     color: white;
@@ -64,12 +62,10 @@ li.li a {
 }
 
 
-
-/*---###########################---*/
-
+/* ---------- MENU/NAVBAR ---------- */
 
 
-/* ### MENU/NAVBAR ### */
+/* MENU */
 div#menu{
 	width: 100%;
     height: 9.0em;
@@ -128,6 +124,7 @@ div#menu div.menu-icons img.drop-icon{
     margin-left: 3.0em;
     width: 3.0em;
 }
+/* NAVBAR */
 nav.top-navbar{
     display: -webkit-flex;
     display: flex;
@@ -150,7 +147,6 @@ nav.top-navbar a.nav-links{
     margin: 0 75px;
     float: center;
 }
-
 nav.top-navbar a.nav-links:link {
     text-decoration: none;
 }
@@ -185,6 +181,7 @@ header.menu {
     flex-wrap: wrap;
     justify-content: center;
 }
+/* HEADER */
 header .menu-itens{
     max-width: 33%;
     margin: 5px 45px 60px 6px;
@@ -209,7 +206,6 @@ header.menu nav.navbar-top a {
   -webkit-border-radius: 2px;
   border-radius: 2px;
 }
-
 header.menu img.img-logo-menu{
     max-width: 33%;
     margin: 5px 45px 60px 6px;
@@ -246,7 +242,6 @@ header.menu div.search-container img.img-search{
     border: none;
     margin-top: 9px;
 }
-
 header.menu div.menu-icon-container{
     float: left;
     display: -webkit-flex;
@@ -272,12 +267,10 @@ header.menu nav.navbar-top a:hover {
 }
 
 
-
-/*---###########################---*/
-
+/* ---------- SLIDER ---------- */
 
 
-/* ### SLIDER ### */
+
 /* Slideshow container */
 section.slider .slideshow-container {
     max-width: 100%;
@@ -356,7 +349,6 @@ section.slider span.dot {
     animation-name: fade;
     animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
     from {opacity: .4} 
     to {opacity: 1}
@@ -365,8 +357,7 @@ section.slider span.dot {
     from {opacity: .4} 
     to {opacity: 1}
 }
-.slick-slider
-{
+.slick-slider{
     position: relative;
 
     display: block;
@@ -386,8 +377,7 @@ section.slider span.dot {
     -webkit-tap-highlight-color: transparent;
 }
 
-.slick-list
-{
+.slick-list{
     position: relative;
 
     display: block;
@@ -396,19 +386,15 @@ section.slider span.dot {
     margin: 0;
     padding: 0;
 }
-.slick-list:focus
-{
+.slick-list:focus{
     outline: none;
 }
-.slick-list.dragging
-{
+.slick-list.dragging{
     cursor: pointer;
     cursor: hand;
 }
 
-.slick-slider .slick-track,
-.slick-slider .slick-list
-{
+.slick-slider .slick-track,.slick-slider .slick-list{
     -webkit-transform: translate3d(0, 0, 0);
        -moz-transform: translate3d(0, 0, 0);
         -ms-transform: translate3d(0, 0, 0);
@@ -416,64 +402,51 @@ section.slider span.dot {
             transform: translate3d(0, 0, 0);
 }
 
-.slick-track
-{
+.slick-track{
     position: relative;
     top: 0;
     left: 0;
 
     display: block;
 }
-.slick-track:before,
-.slick-track:after
-{
+.slick-track:before,.slick-track:after{
     display: table;
 
     content: '';
 }
-.slick-track:after
-{
+.slick-track:after{
     clear: both;
 }
-.slick-loading .slick-track
-{
+.slick-loading .slick-track{
     visibility: hidden;
 }
 
-.slick-slide
-{
+.slick-slide{
     display: none;
     float: left;
 
     height: 100%;
     min-height: 1px;
 }
-[dir='rtl'] .slick-slide
-{
+[dir='rtl'] .slick-slide{
     float: right;
 }
-.slick-slide img
-{
+.slick-slide img{
     display: block;
 }
-.slick-slide.slick-loading img
-{
+.slick-slide.slick-loading img{
     display: none;
 }
-.slick-slide.dragging img
-{
+.slick-slide.dragging img{
     pointer-events: none;
 }
-.slick-initialized .slick-slide
-{
+.slick-initialized .slick-slide{
     display: block;
 }
-.slick-loading .slick-slide
-{
+.slick-loading .slick-slide{
     visibility: hidden;
 }
-.slick-vertical .slick-slide
-{
+.slick-vertical .slick-slide{
     display: block;
 
     height: auto;
@@ -487,7 +460,6 @@ section.slider span.dot {
   width: 100vw;
   height: 100vh;
 }
-
 .slider--item {
   width: 100vw;
   height: 100vh;
@@ -503,7 +475,6 @@ section.slider span.dot {
 .slick-slide.slick-current {
   z-index: 2;
 }
-
 .slick-arrow {
   position: absolute;
   width: 150px;
@@ -597,7 +568,6 @@ section.slider span.dot {
   opacity: 1;
   width: 80px;
 }
-
 .slick-dots {
   padding: 0;
   margin: 0;
@@ -642,13 +612,8 @@ section.slider span.dot {
 
 
 
+/* ---------- CARDS ---------- */
 
-/*---###########################---*/
-
-
-
-
-/* ### CARDS ### */
 div.titulo-rec::after{
     content: "";
     position: absolute;
@@ -755,11 +720,8 @@ div.card p.last-detail-card{
 }
 
 
-/*---###########################---*/
+/* ---------- FOOTER ---------- */
 
-
-
-/* ### FOOTER ### */
 
 .generic-anchor {
 	color: #f1f1f1;
@@ -962,22 +924,10 @@ p.direitos{
 
 
 
+/* ---------- CADASTRO DE RECEITAS ----------- */
 
 
 
-
-
-
-
-
-
-
-
-/*---##################################################---*/
-
-
-
-/* ### CADASTRO DE RECEITAS ### */
 #cadastroReceita{
     width: 1000px;
 }
