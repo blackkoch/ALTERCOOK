@@ -30,26 +30,7 @@
     
     <body>
         <div class="page">
-            <!-- #### MENU #### -->
-            <header class="menu">
-            <a src="index.html"><img class="img-logo-menu menu-itens" src="img/AC.png" alt="AlterCook"></a>
-            
-            <div class="search-container menu-itens">
-                <form action="/action_page.php">
-                    <input type="text" placeholder="Pesquisar..." name="pesquisar" class="search-form">
-                        
-                    <button type="submit"><img src="img/icons/search.svg" class="img-search" alt="Pesquisar"/></button>
-                </form>
-            </div>
-            
-            <div class="menu-icon-container menu-itens">
-                    <a href="cadastro-receitas.php">
-                        <img src="img/icons/contract.svg" class="menu-icon">
-                    </a>
-                    <span onclick="openNav()" style="margin-left: 150px; margin-right: 5px; cursor: pointer;">
-                        <img src="img/icons/menu.svg" class="drop-menu-icon">
-                    </span>
-            </div>
+           // nao vai ter menu
             
             <nav class="navbar-top">
                 <a href="">Vegana</a>
